@@ -1,6 +1,6 @@
-<h2>{{ hero.name }} Details</h2>
+<!--<h2>{{ hero.name }} Details</h2>
 <div><span>id: </span>{{hero.id}}</div>
-<div><span>name: </span>{{hero.name}}</div>
+<div><span>name: </span>{{hero.name}}</div>-->
 
 <br/>
 <div>
@@ -13,13 +13,15 @@
     <li *ngFor="let hero of heroes"
         [class.selected]="hero === selectedHero"
         (click)="onSelect(hero)">
+      <a routerLink="/detail/{{hero.id}}">
       <span class="badge">{{hero.id}}</span> {{hero.name}}
+      </a>
     </li>
   </ul>
 
 </div>
 
-  <h2>------------nfFor------------</h2>
+  <!--<h2>&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;nfFor&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;</h2>
 <div *ngIf="selectedHero">
   <div><span>id: </span>{{selectedHero.id}}</div>
   <div>
@@ -29,3 +31,4 @@
   </div>
 </div>
 <app-hero-detail [hero]="selectedHero"></app-hero-detail>
+-->

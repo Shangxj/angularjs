@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Hero} from './hero';
 import {HeroService} from "../hero.service";
-import {Routes} from "@angular/router";
 
 @Component({
   selector: 'app-heroes',
@@ -11,12 +10,12 @@ import {Routes} from "@angular/router";
 export class HeroComponent implements OnInit {
 
 
-  hero: Hero = {
+/*  hero: Hero = {
     id: 1,
     name: '李四'
-  };
+  };*/
 
-  selectedHero: Hero;
+  // selectedHero: Hero;
 
   heroes: Hero[];
 
@@ -24,9 +23,9 @@ export class HeroComponent implements OnInit {
 
 
 
-  onSelect(hero: Hero) {
+/*  onSelect(hero: Hero) {
     this.selectedHero = hero;
-  }
+  }*/
 
   getHeroes(): void{
     console.log("----------------herSercice---------------2222")
