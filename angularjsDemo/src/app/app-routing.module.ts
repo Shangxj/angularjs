@@ -4,7 +4,7 @@ import {HeroComponent} from "./heroes/hero.component";
 
 
 const routes: Routes =[
-  {path: 'heroes',component: HeroComponent,loadChildren}
+  {path: 'heroes',component: HeroComponent}
 ]
 
 @NgModule({
